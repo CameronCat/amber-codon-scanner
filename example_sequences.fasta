@@ -1,0 +1,29 @@
+; ── SYNTHETIC PLACEHOLDER SEQUENCES ──────────────────────────────────────
+;
+; These sequences are NOT real pylS or mttB sequences.
+; They are synthetic DNA strings used only to demonstrate the tool's API.
+;
+; To obtain verified pyrrolysine-encoding sequences from M. acetivorans C2A:
+;   Genome:  GenBank AE010299.1
+;   pylS  :  locus MA3749  https://www.ncbi.nlm.nih.gov/gene/1482527
+;   mttB  :  locus MA0859  (trimethylamine methyltransferase, contains internal UAG)
+;             https://www.ncbi.nlm.nih.gov/gene/1480067
+;
+; For additional pyrrolysine-encoding genes, search GenBank AE010299.1
+; for genes containing in-frame UAG codons (mtmB, mttB family).
+;
+; Quick download:
+;   efetch -db nuccore -id AE010299.1 -format fasta > M_acetivorans.fasta
+; ──────────────────────────────────────────────────────────────────────────
+
+; --- Synthetic mid-ORF UAG (pyrrolysine candidate context) ---
+; Structure: ATG + 20x GCG codons + TAG + 15x GCG codons + GCGCGG stem-loop-like + TGA
+>SYNTHETIC_MID_ORF_UAG_placeholder
+ATGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCG
+TAGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCGGCG
+GCGGCGGCGGCGGCGGCCCCGGGGCCCCGGGGAAAAT
+GCGGCGGCGGCGGCGGCGGCGGCGGCGGCGTGA
+
+; --- Synthetic terminal UAG (stop codon context) ---
+>SYNTHETIC_TERMINAL_UAG_placeholder
+ATGGCGGCGGCGGCGGCGGCGGCGGCGGCGTAG
