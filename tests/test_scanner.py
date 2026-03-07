@@ -105,7 +105,11 @@ class TestScanner:
         assert len(results["seq1"]) >= 1
 
     def test_both_strands_scanned(self, scanner):
-        seq = _make_mid_orf_uag()
+        # Need TAG on forward strand AND CTA on forward strand
+        # (CTA reverse-complements to TAG, so scanner finds it on "-" strand)
+        # "ATGCTAGATG" contains TAG at pos 3 (forward) and
+        # its RC "CATCTAGCAT" contains TAG at pos 4 (reverse)
+        seq = "ATGCTAGATG" * 6 + "TGA"
         results = scanner.scan_sequence(seq)
         strands = {c.strand for c in results}
         assert "+" in strands
