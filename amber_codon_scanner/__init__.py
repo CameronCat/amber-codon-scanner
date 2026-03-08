@@ -7,7 +7,7 @@ as a likely pyrrolysine-coding codon or a true translation stop.
 Based on:
   Shalvarjian, Chadwick et al. (2025) PNAS 122:e2517473122
     -- Ambiguous amber codon usage in pyrrolysine-encoding methanogens
-  Namy et al. (2004) Mol Cell 13(1):1-12
+  Namy et al. (2004) Mol Cell 13(2):157-168
     -- PYLIS element characterisation
 
 Quick start::

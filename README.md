@@ -179,7 +179,7 @@ If you use this tool in published research, please cite:
   title   = {Methanogenic archaea encoding pyrrolysine maintain
              ambiguous amber codon usage},
   author  = {Shalvarjian, Katherine E and Chadwick, Garrett L and
-             P{\'e}rez, Pilar I and Woods, Patrick H and Orphan, Victoria J
+             P{\'e}rez, Paloma I and Woods, Patrick H and Orphan, Victoria J
              and Nayak, Dipti D},
   journal = {Proceedings of the National Academy of Sciences},
   volume  = {122},
