@@ -3,6 +3,8 @@ name: CI
 on:
   push:
     branches: [ "main", "dev" ]
+    tags:
+      - 'v*'
   pull_request:
     branches: [ "main" ]
 
@@ -14,7 +16,6 @@ jobs:
       fail-fast: false
       matrix:
         python-version: ["3.9", "3.10", "3.11", "3.12"]
-
     steps:
       - uses: actions/checkout@v4
       - name: Set up Python ${{ matrix.python-version }}
@@ -35,4 +36,21 @@ jobs:
           file: ./coverage.xml
           fail_ci_if_error: false
 
-  # Lint job omitted — add back with ruff when code is ready for a formatting pass
+  publish:
+    name: Publish to PyPI
+    needs: test
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Build package
+        run: |
+          pip install build
+          python -m build
+      - name: Publish to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1

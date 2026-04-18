@@ -1,0 +1,54 @@
+cff-version: 1.2.0
+title: amber-codon-scanner
+message: >-
+  If you use this software in your research, please cite it
+  using the metadata from this file.
+type: software
+version: 0.1.0
+date-released: "2026-04-08"
+authors:
+  - family-names: Piepkorn
+    given-names: Cameron
+    affiliation: Independent Researcher
+abstract: >-
+  amber-codon-scanner is a Python library for scanning archaeal DNA
+  sequences for UAG (amber) codons and classifying each as a likely
+  pyrrolysine-coding codon or a true translation stop. Classification
+  uses two heuristic evidence sources: ORF context analysis and
+  detection of PYLIS-like stem-loop elements downstream of UAG codons.
+  Designed to support research on ambiguous amber codon usage in
+  pyrrolysine-encoding methanogenic archaea.
+keywords:
+  - pyrrolysine
+  - archaea
+  - amber codon
+  - UAG
+  - Methanosarcina
+  - genetic code
+  - methanogenesis
+  - bioinformatics
+license: MIT
+repository-code: "https://github.com/CameronPiepkorn/amber-codon-scanner"
+url: "https://github.com/CameronPiepkorn/amber-codon-scanner"
+references:
+  - type: article
+    authors:
+      - family-names: Shalvarjian
+        given-names: Katherine E.
+      - family-names: Chadwick
+        given-names: Garrett L.
+      - family-names: Perez
+        given-names: Paloma I.
+      - family-names: Woods
+        given-names: Patrick H.
+      - family-names: Orphan
+        given-names: Victoria J.
+      - family-names: Nayak
+        given-names: Dipti D.
+    title: >-
+      Methanogenic archaea encoding pyrrolysine maintain ambiguous
+      amber codon usage
+    journal: Proceedings of the National Academy of Sciences
+    volume: 122
+    issue: 45
+    year: 2025
