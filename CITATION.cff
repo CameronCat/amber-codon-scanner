@@ -7,9 +7,10 @@ type: software
 version: 0.1.0
 date-released: "2026-04-08"
 authors:
-  - family-names: Piepkorn
+  - family-names: Pham
     given-names: Cameron
-    affiliation: Independent Researcher
+    affiliation: UC Berkeley
+    orcid: "https://orcid.org/0009-0005-8364-8420"
 abstract: >-
   amber-codon-scanner is a Python library for scanning archaeal DNA
   sequences for UAG (amber) codons and classifying each as a likely
@@ -28,8 +29,8 @@ keywords:
   - methanogenesis
   - bioinformatics
 license: MIT
-repository-code: "https://github.com/CameronPiepkorn/amber-codon-scanner"
-url: "https://github.com/CameronPiepkorn/amber-codon-scanner"
+repository-code: "https://github.com/CameronCat/amber-codon-scanner"
+url: "https://github.com/CameronCat/amber-codon-scanner"
 references:
   - type: article
     authors:

@@ -27,7 +27,7 @@ Open an issue describing:
 ## Development setup
 
 ```bash
-git clone https://github.com/CameronPiepkorn/amber-codon-scanner
+git clone https://github.com/CameronCat/amber-codon-scanner
 cd amber-codon-scanner
 pip install -e ".[dev]"
 pytest

@@ -1,6 +1,6 @@
 # amber-codon-scanner
 
-[![CI](https://github.com/CameronPiepkorn/amber-codon-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/CameronPiepkorn/amber-codon-scanner/actions)
+[![CI](https://github.com/CameronCat/amber-codon-scanner/actions/workflows/ci.yml/badge.svg)](https://github.com/CameronCat/amber-codon-scanner/actions)
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -42,7 +42,7 @@ This tool uses two evidence sources to classify each UAG:
 
 ```bash
 # From source
-git clone https://github.com/CameronPiepkorn/amber-codon-scanner
+git clone https://github.com/CameronCat/amber-codon-scanner
 cd amber-codon-scanner
 pip install -e ".[dev]"
 ```
